@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local generated data and model outputs
+dataset/real_data.csv
+dataset/real_data.npy
+results/*.csv
+results/*.npy
+results/*.pt
+results/*.pth
+results/*.png
+results/*.json
+
+# Local dashboard/database state
+project_data.db
+*.db
+
+# Logs
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# PowerShell/local cache artifacts
+Microsoft/
