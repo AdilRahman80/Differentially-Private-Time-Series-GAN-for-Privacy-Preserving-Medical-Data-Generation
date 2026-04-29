@@ -81,12 +81,12 @@ def page_privacy_analysis():
     st.header("Privacy Analysis")
     st.write("Differential Privacy Budget Tracking")
     
-    epsilon = st.slider("Target Epsilon (ε)", 0.1, 10.0, 1.0)
+    epsilon = st.slider("Target Epsilon (epsilon)", 0.1, 10.0, 1.0)
     delta = 1e-5
     st.latex(r"P(\mathcal{M}(D) \in S) \le e^{\epsilon} P(\mathcal{M}(D') \in S) + \delta")
     
     st.write(f"Current Budget Configuration:")
-    st.write(f"**Epsilon (ε)**: {epsilon}")
-    st.write(f"**Delta (δ)**: {delta}")
+    st.write(f"**Epsilon**: {epsilon}")
+    st.write(f"**Delta**: {delta}")
     
     st.info("Lower epsilon indicates stronger privacy guarantees, but may reduce the utility (fidelity) of generated time-series.")
